@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
-import { useTrail, a } from "@react-spring/web";
-import Trail from "../Trail/Trail";
+
+import Trail from "../../Trail/Trail";
 
 const NameHolder = styled.span`
   font-size: ${(props) => (props.isWindowSmall ? "1.8em" : "2.2em")};
@@ -19,9 +19,8 @@ const NameHolder = styled.span`
 `;
 
 const NamePresentation = ({ textList }) => {
-  const [open, set] = useState(true);
   return (
-    <Trail open={open}>
+    <Trail open={true}>
       {textList.map((text) => (
         <NameHolder key={text}>
           <h1>{text}</h1>

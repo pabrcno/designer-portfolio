@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
-import NamePresentation from "../NamePresentation";
-import ParticlesBackground from "../ParticlesBackground";
+import NamePresentation from "./NamePresentation";
+
 const StyledSection = styled.div`
   position: absolute;
   top: 30%;

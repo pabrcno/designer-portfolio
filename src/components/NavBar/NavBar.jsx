@@ -121,25 +121,18 @@ const NavBar = (props) => {
     >
       <MenuItem>
         <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary"></Badge>
-        </IconButton>
-        <p></p>
-      </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
           <Typography className={classes.title}>ABOUT</Typography>
         </IconButton>
       </MenuItem>
-      <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
+      <MenuItem>
+        <IconButton aria-label="show 4 new mails" color="inherit">
+          <Typography className={classes.title}>CONTACT</Typography>
         </IconButton>
-        <p>Profile</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton aria-label="show 4 new mails" color="inherit">
+          <Typography className={classes.title}>WORK</Typography>
+        </IconButton>
       </MenuItem>
     </Menu>
   );

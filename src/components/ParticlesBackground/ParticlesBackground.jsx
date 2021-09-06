@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Particles from "react-particles-js";
-import particlesConfig from "../../utils/particlesjs-config";
+import particlesConfig from "./utils/particlesjs-config";
 import styled from "styled-components";
 
 const StyledBackground = styled.div`
