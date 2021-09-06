@@ -11,6 +11,8 @@ import Menu from "@material-ui/core/Menu";
 const useStyles = makeStyles((theme) => ({
   grow: {
     flexGrow: 1,
+    position: "sticky",
+    top: 0,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -90,7 +92,10 @@ const NavBar = (props) => {
     <div className={classes.grow}>
       <AppBar
         position="static"
-        style={{ minWidth: "80vw", backgroundColor: "rgba(0,0,0,0.2)" }}
+        style={{
+          minWidth: "80vw",
+          backgroundColor: "rgba(0,0,0,0.2)",
+        }}
       >
         <Toolbar>
           <Typography className={classes.title} variant="h6" noWrap>

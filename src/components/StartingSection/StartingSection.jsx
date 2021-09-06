@@ -1,8 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import NamePresentation from "./NamePresentation";
-
-const StyledSection = styled.div`
+const StyledSection = styled.section`
   position: absolute;
   top: 30%;
   left: 10%;

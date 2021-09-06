@@ -1,22 +1,36 @@
-import React, { Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import NavBar from "../../components/NavBar/NavBar";
 import ParticlesBackground from "../../components/ParticlesBackground";
+import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
+import startingParticlesConfig from "../../components/ParticlesBackground/utils/starting-particlesjs-config";
 
 const StyledMainScreen = styled.div`
-  width: 100vw;
+  width: 98vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: visible;
+`;
+const Scaffold = styled.div`
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
 `;
 
 const Main = (props) => {
   return (
     <StyledMainScreen>
-      <ParticlesBackground />
+      <ParticlesBackground
+        background={"black"}
+        particlesConfig={startingParticlesConfig}
+      />
       <NavBar />
       <StartingSection />
+      <Scaffold />
+
+      <ProjectsSection />
     </StyledMainScreen>
   );
 };

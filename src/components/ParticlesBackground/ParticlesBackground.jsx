@@ -1,22 +1,21 @@
 import React, { Fragment } from "react";
 import Particles from "react-particles-js";
-import particlesConfig from "./utils/particlesjs-config";
+
 import styled from "styled-components";
 
 const StyledBackground = styled.div`
-  background-color: black;
+  background: ${(props) => props.background};
   position: absolute;
-
   width: 100vw;
   height: 100vh;
   min-width: 800px;
   min-height: 1000px;
-  z-index: -1;
+  z-index: 0;
 `;
 
-const ParticlesBackground = ({ children }) => {
+const ParticlesBackground = ({ background, particlesConfig }) => {
   return (
-    <StyledBackground>
+    <StyledBackground background={background}>
       <Particles params={particlesConfig} />
     </StyledBackground>
   );
