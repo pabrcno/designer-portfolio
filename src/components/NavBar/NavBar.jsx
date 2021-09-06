@@ -1,19 +1,12 @@
 import React from "react";
-import { alpha, makeStyles } from "@material-ui/core/styles";
+import { makeStyles } from "@material-ui/core/styles";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-import InputBase from "@material-ui/core/InputBase";
-import Badge from "@material-ui/core/Badge";
-import MenuItem from "@material-ui/core/MenuItem";
+
+import MMenuItem from "@material-ui/core/MenuItem";
 import Menu from "@material-ui/core/Menu";
-import MenuIcon from "@material-ui/icons/Menu";
-import SearchIcon from "@material-ui/icons/Search";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import MailIcon from "@material-ui/icons/Mail";
-import NotificationsIcon from "@material-ui/icons/Notifications";
-import MoreIcon from "@material-ui/icons/MoreVert";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -29,29 +22,13 @@ const useStyles = makeStyles((theme) => ({
       display: "block",
     },
   },
-
-  searchIcon: {
-    padding: theme.spacing(0, 2),
-    height: "100%",
-    position: "absolute",
-    pointerEvents: "none",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
+  subtitle: {
+    fontFamily: "Syncopate-Bold",
   },
   inputRoot: {
     color: "inherit",
   },
-  inputInput: {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
+
   sectionDesktop: {
     display: "none",
 
@@ -67,46 +44,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const MenuItem = ({ ariaLabel, classes, children }) => (
+  <MMenuItem>
+    <IconButton aria-label={ariaLabel} color="inherit">
+      <Typography className={classes}>{children}</Typography>
+    </IconButton>
+  </MMenuItem>
+);
+
 const NavBar = (props) => {
   const classes = useStyles();
-  const [anchorEl, setAnchorEl] = React.useState(null);
+
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
   };
-
-  const handleMenuClose = () => {
-    setAnchorEl(null);
-    handleMobileMenuClose();
-  };
-
-  const handleMobileMenuOpen = (event) => {
-    setMobileMoreAnchorEl(event.currentTarget);
-  };
-
-  const menuId = "primary-search-account-menu";
-  const renderMenu = (
-    <Menu
-      anchorEl={anchorEl}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      id={menuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={isMenuOpen}
-      onClose={handleMenuClose}
-    >
-      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My account</MenuItem>
-    </Menu>
-  );
 
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
@@ -119,20 +74,14 @@ const NavBar = (props) => {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Typography className={classes.title}>ABOUT</Typography>
-        </IconButton>
+      <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
+        ABOUT
       </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Typography className={classes.title}>CONTACT</Typography>
-        </IconButton>
+      <MenuItem aria-label="contactButton" classes={classes.subtitle}>
+        CONTACT
       </MenuItem>
-      <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Typography className={classes.title}>WORK</Typography>
-        </IconButton>
+      <MenuItem aria-label="workButton" classes={classes.subtitle}>
+        WORKS
       </MenuItem>
     </Menu>
   );
@@ -150,38 +99,30 @@ const NavBar = (props) => {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <IconButton aria-label="show 4 new mails" color="inherit">
-              <Typography className={classes.title}>ABOUT</Typography>
-            </IconButton>
-            <IconButton aria-label="show 17 new notifications" color="inherit">
-              <Typography className={classes.title}>CONTACT</Typography>
-            </IconButton>
-            <IconButton
-              edge="end"
-              aria-label="account of current user"
-              aria-controls={menuId}
-              aria-haspopup="true"
-              onClick={handleProfileMenuOpen}
-              color="inherit"
-            >
-              <Typography className={classes.title}>WORK</Typography>
-            </IconButton>
+            <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
+              ABOUT
+            </MenuItem>
+            <MenuItem aria-label="contactButton" classes={classes.subtitle}>
+              CONTACT
+            </MenuItem>
+            <MenuItem aria-label="workButton" classes={classes.subtitle}>
+              WORKS
+            </MenuItem>
           </div>
           <div className={classes.sectionMobile}>
-            <IconButton
-              aria-label="show more"
-              aria-controls={mobileMenuId}
-              aria-haspopup="true"
-              onClick={handleMobileMenuOpen}
-              color="inherit"
-            >
-              <MoreIcon />
-            </IconButton>
+            <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
+              ABOUT
+            </MenuItem>
+            <MenuItem aria-label="contactButton" classes={classes.subtitle}>
+              CONTACT
+            </MenuItem>
+            <MenuItem aria-label="workButton" classes={classes.subtitle}>
+              WORKS
+            </MenuItem>
           </div>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}
-      {renderMenu}
     </div>
   );
 };
