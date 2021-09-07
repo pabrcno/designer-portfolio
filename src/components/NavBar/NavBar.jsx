@@ -59,34 +59,7 @@ const NavBar = (props) => {
 
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
-  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleMobileMenuClose = () => {
-    setMobileMoreAnchorEl(null);
-  };
-
   const mobileMenuId = "primary-search-account-menu-mobile";
-  const renderMobileMenu = (
-    <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{ vertical: "top", horizontal: "right" }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{ vertical: "top", horizontal: "right" }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
-    >
-      <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
-        ABOUT
-      </MenuItem>
-      <MenuItem aria-label="contactButton" classes={classes.subtitle}>
-        CONTACT
-      </MenuItem>
-      <MenuItem aria-label="workButton" classes={classes.subtitle}>
-        WORKS
-      </MenuItem>
-    </Menu>
-  );
 
   return (
     <div className={classes.grow}>
@@ -127,7 +100,6 @@ const NavBar = (props) => {
           </div>
         </Toolbar>
       </AppBar>
-      {renderMobileMenu}
     </div>
   );
 };

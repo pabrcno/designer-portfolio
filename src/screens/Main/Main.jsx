@@ -25,6 +25,7 @@ const Main = (props) => {
       <ParticlesBackground
         background={"black"}
         particlesConfig={startingParticlesConfig}
+        styles={{ cursor: "pointer" }}
       />
       <NavBar />
       <StartingSection />
