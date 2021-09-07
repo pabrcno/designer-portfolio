@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import styled from "styled-components";
 import NamePresentation from "./NamePresentation";
 import ParticlesBackground from "../ParticlesBackground";
 import startingParticlesConfig from "../ParticlesBackground/utils/starting-particlesjs-config";
+
 const StyledSection = styled.section`
   position: absolute;
   top: 30%;
@@ -13,6 +14,7 @@ const StyledSection = styled.section`
 
 const Subtitle = styled.h2`
   position: absolute;
+
   top: 90%;
   left: 10%;
   color: white;
@@ -20,8 +22,22 @@ const Subtitle = styled.h2`
   font-size: 2em;
   font-family: Syncopate-Bold;
   text-decoration: underline;
+  cursor: pointer;
+  transition: font-size 1s ease;
+
+  &:hover {
+    font-size: 2.1em;
+  }
+  &:active {
+    font-size: 2em;
+  }
 `;
-const StartingSection = (props) => {
+const StartingSection = ({ setY, scrollDestinationRef }) => {
+  const messagesEndRef = useRef(null);
+  const scrollToBottom = () => {
+    messagesEndRef.current.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
       <ParticlesBackground
@@ -39,7 +55,21 @@ const StartingSection = (props) => {
           ]}
         />
       </StyledSection>
-      <Subtitle>projects</Subtitle>
+      <div
+        ref={messagesEndRef}
+        style={{
+          position: "absolute",
+          top: "80%",
+          left: "10%",
+        }}
+      ></div>
+      <Subtitle
+        onClick={() => {
+          scrollToBottom();
+        }}
+      >
+        projects
+      </Subtitle>
     </>
   );
 };

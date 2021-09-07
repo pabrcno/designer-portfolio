@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import NavBar from "../../components/NavBar/NavBar";
-
+import { useSpring, config } from "react-spring";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
 
@@ -19,11 +19,24 @@ const Scaffold = styled.div`
 `;
 
 const Main = (props) => {
+  const scrollDestinationRef = useRef();
+  const [y, setY] = useSpring(() => ({
+    immediate: false,
+    y: 0,
+    onFrame: (props) => {
+      window.scroll(0, props.y);
+    },
+    config: config.slow,
+  }));
   return (
     <StyledMainScreen>
       <NavBar />
-      <StartingSection />
+      <StartingSection
+        setY={setY}
+        scrollDestinationRef={scrollDestinationRef}
+      />
       <Scaffold />
+      <div ref={scrollDestinationRef} />
       <ProjectsSection />
     </StyledMainScreen>
   );
