@@ -1,17 +1,18 @@
-import React, { useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 import NavBar from "../../components/NavBar/NavBar";
-import { useSpring, config } from "react-spring";
+
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
 import TechStackSection from "../../components/TechStackSection/TechStackSection";
 
 const StyledMainScreen = styled.div`
-  width: 98vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow-y: visible;
+  min-width: 600px;
 `;
 const Scaffold = styled.div`
   width: 100vw;
@@ -20,25 +21,13 @@ const Scaffold = styled.div`
 `;
 
 const Main = (props) => {
-  const scrollDestinationRef = useRef();
-  const [y, setY] = useSpring(() => ({
-    immediate: false,
-    y: 0,
-    onFrame: (props) => {
-      window.scroll(0, props.y);
-    },
-    config: config.slow,
-  }));
   return (
     <StyledMainScreen>
       <NavBar />
-      <StartingSection
-        setY={setY}
-        scrollDestinationRef={scrollDestinationRef}
-      />
+      <StartingSection />
       <Scaffold />
-      <div ref={scrollDestinationRef} />
       <ProjectsSection />
+
       <TechStackSection />
     </StyledMainScreen>
   );

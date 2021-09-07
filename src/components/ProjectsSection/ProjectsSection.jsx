@@ -6,11 +6,11 @@ import ProjectCard from "../ProjectCard";
 import maImg from "../../assets/images/meetAssistant.svg";
 import tasks from "../../assets/images/tasks.svg";
 const ProjectSection = styled.section`
-  width: 100vw;
-  max-width: 100vw;
+  width: 100%;
+
   display: flex;
   justify-content: center;
-
+  padding-bottom: 5em;
   align-items: center;
   background-color: black;
   flex-direction: column;

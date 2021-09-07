@@ -68,7 +68,7 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
           scrollToBottom();
         }}
       >
-        projects
+        PROJECTS
       </Subtitle>
     </>
   );
