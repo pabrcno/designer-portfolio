@@ -6,7 +6,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
 
 import MMenuItem from "@material-ui/core/MenuItem";
-import Menu from "@material-ui/core/Menu";
 
 const useStyles = makeStyles((theme) => ({
   grow: {

@@ -10,8 +10,7 @@ const ProjectSection = styled.section`
   max-width: 100vw;
   display: flex;
   justify-content: center;
-  z-index: 0;
-  margin-top: 2em;
+
   align-items: center;
   background-color: black;
   flex-direction: column;
