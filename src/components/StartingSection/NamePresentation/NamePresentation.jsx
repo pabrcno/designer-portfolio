@@ -7,7 +7,6 @@ const NameHolder = styled.span`
   font-size: ${(props) => (props.isWindowSmall ? "1.8em" : "2.2em")};
   color: whitesmoke;
   font-weight: 950;
-
   font-family: Syncopate-Bold;
   letter-spacing: 1px;
   max-width: 80%;

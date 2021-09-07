@@ -10,16 +10,18 @@ const StyledSection = styled.section`
 
 const StartingSection = (props) => {
   return (
-    <StyledSection>
-      <NamePresentation
-        textList={[
-          "HI! I'M PAULO BRCN",
-          " A SOFTWARE CREATOR",
-          "LIVING IN",
-          " BUENOS AIRES, AR",
-        ]}
-      />
-    </StyledSection>
+    <>
+      <StyledSection>
+        <NamePresentation
+          textList={[
+            "HI! I'M PAULO BRCN",
+            " A SOFTWARE CREATOR",
+            "LIVING IN",
+            " BUENOS AIRES, AR",
+          ]}
+        />
+      </StyledSection>
+    </>
   );
 };
 

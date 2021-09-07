@@ -7,6 +7,10 @@ const ProjectSection = styled.section`
   height: 1000px;
   width: 100vw;
   z-index: -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 const ProjectsSection = (props) => {
@@ -16,6 +20,7 @@ const ProjectsSection = (props) => {
         background=" linear-gradient(0deg, rgba(183,183,183,1) 6%, rgba(0,0,0,1) 85%);"
         particlesConfig={projectsParticlesConfig}
       />
+      <h2 style={{ color: "red" }}>projects</h2>
     </ProjectSection>
   );
 };
