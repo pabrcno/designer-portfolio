@@ -4,6 +4,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import { useSpring, config } from "react-spring";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
+import TechStackSection from "../../components/TechStackSection/TechStackSection";
 
 const StyledMainScreen = styled.div`
   width: 98vw;
@@ -38,6 +39,7 @@ const Main = (props) => {
       <Scaffold />
       <div ref={scrollDestinationRef} />
       <ProjectsSection />
+      <TechStackSection />
     </StyledMainScreen>
   );
 };
