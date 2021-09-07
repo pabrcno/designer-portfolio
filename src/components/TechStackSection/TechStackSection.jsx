@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TagCloud from "react3dtagcloud";
 import ParticlesBackground from "../ParticlesBackground";
-import projectsParticlesConfig from "../ParticlesBackground/utils/projects-particlesjs-config";
+import projectsParticlesConfig from "../ParticlesBackground/utils/tech-particlesjs-config";
 const StyledSection = styled.section`
   width: 100%;
   min-width: 100%;
@@ -87,7 +87,7 @@ const TechStackSection = (props) => {
         <CloudContainer>
           <TagCloud
             tagName={educationTags}
-            speed={0.1}
+            speed={0.2}
             radius={200}
             style={{ pointerEvent: "none" }}
           />
@@ -108,7 +108,7 @@ const TechStackSection = (props) => {
         <CloudContainer>
           <TagCloud
             tagName={techTags}
-            speed={0.1}
+            speed={0.2}
             radius={200}
             style={{ pointerEvent: "none" }}
           />
