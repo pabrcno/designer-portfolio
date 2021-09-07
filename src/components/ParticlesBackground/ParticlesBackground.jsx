@@ -10,7 +10,7 @@ const StyledBackground = styled.div`
   height: 100%;
   min-width: 800px;
   min-height: 1000px;
-  z-index: -1;
+
   cursor: pointer;
 `;
 

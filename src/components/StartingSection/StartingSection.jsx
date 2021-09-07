@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import NamePresentation from "./NamePresentation";
+import ParticlesBackground from "../ParticlesBackground";
+import startingParticlesConfig from "../ParticlesBackground/utils/starting-particlesjs-config";
 const StyledSection = styled.section`
   position: absolute;
   top: 30%;
@@ -22,6 +24,11 @@ const Subtitle = styled.h2`
 const StartingSection = (props) => {
   return (
     <>
+      <ParticlesBackground
+        background={"black"}
+        particlesConfig={startingParticlesConfig}
+        styles={{ cursor: "pointer" }}
+      />
       <StyledSection>
         <NamePresentation
           textList={[
