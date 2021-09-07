@@ -7,10 +7,11 @@ const StyledBackground = styled.div`
   background: ${(props) => props.background};
   position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   min-width: 800px;
   min-height: 1000px;
-  z-index: 0;
+  z-index: -1;
+  cursor: pointer;
 `;
 
 const ParticlesBackground = ({ background, particlesConfig }) => {

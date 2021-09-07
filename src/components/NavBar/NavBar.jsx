@@ -26,6 +26,10 @@ const useStyles = makeStyles((theme) => ({
   },
   subtitle: {
     fontFamily: "Syncopate-Bold",
+    transition: "font-size 1s ease",
+    "&:hover": {
+      fontSize: "1.2rem",
+    },
   },
   inputRoot: {
     color: "inherit",
@@ -57,10 +61,6 @@ const MenuItem = ({ ariaLabel, classes, children }) => (
 const NavBar = (props) => {
   const classes = useStyles();
 
-  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
-
-  const mobileMenuId = "primary-search-account-menu-mobile";
-
   return (
     <div className={classes.grow}>
       <AppBar
@@ -84,7 +84,7 @@ const NavBar = (props) => {
               CONTACT
             </MenuItem>
             <MenuItem aria-label="workButton" classes={classes.subtitle}>
-              WORKS
+              PORTFOLIO
             </MenuItem>
           </div>
           <div className={classes.sectionMobile}>
@@ -95,7 +95,7 @@ const NavBar = (props) => {
               CONTACT
             </MenuItem>
             <MenuItem aria-label="workButton" classes={classes.subtitle}>
-              WORKS
+              PORTFOLIO
             </MenuItem>
           </div>
         </Toolbar>

@@ -6,8 +6,19 @@ const StyledSection = styled.section`
   top: 30%;
   left: 10%;
   display: flex;
+  cursor: pointer;
 `;
 
+const Subtitle = styled.h2`
+  position: absolute;
+  top: 90%;
+  left: 10%;
+  color: white;
+  margin-left: 40px;
+  font-size: 2em;
+  font-family: Syncopate-Bold;
+  text-decoration: underline;
+`;
 const StartingSection = (props) => {
   return (
     <>
@@ -21,6 +32,7 @@ const StartingSection = (props) => {
           ]}
         />
       </StyledSection>
+      <Subtitle>projects</Subtitle>
     </>
   );
 };
