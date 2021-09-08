@@ -41,7 +41,7 @@ const CloudContainer = styled.span`
 
 const StyledTagClod = styled(TagCloud)`
   &:a {
-    color: white;
+    color: white !important;
   }
 `;
 
