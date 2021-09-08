@@ -11,7 +11,7 @@ const StyledMainScreen = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-y: visible;
+  background-color: black;
   min-width: 600px;
 `;
 const Scaffold = styled.div`
@@ -25,9 +25,7 @@ const Main = (props) => {
     <StyledMainScreen>
       <NavBar />
       <StartingSection />
-      <Scaffold />
       <ProjectsSection />
-
       <TechStackSection />
     </StyledMainScreen>
   );
