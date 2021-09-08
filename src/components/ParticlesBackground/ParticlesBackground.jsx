@@ -5,12 +5,10 @@ import styled from "styled-components";
 
 const StyledBackground = styled.div`
   background: ${(props) => props.background};
-  position: absolute;
-  width: 100vw;
-  height: 100%;
-  min-width: 800px;
-  min-height: 1000px;
-
+  width: 100%;
+  min-width: 1800px;
+  overflow-x: hidden;
+  overflow-y: hidden;
   cursor: pointer;
 `;
 

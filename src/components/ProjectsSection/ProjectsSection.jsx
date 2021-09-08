@@ -5,6 +5,7 @@ import projectsParticlesConfig from "../ParticlesBackground/utils/projects-parti
 import ProjectCard from "../ProjectCard";
 import maImg from "../../assets/images/meetAssistant.svg";
 import tasks from "../../assets/images/tasks.svg";
+import tso from "../../assets/images/tso.svg";
 const ProjectSection = styled.section`
   width: 100%;
 
@@ -18,13 +19,9 @@ const ProjectSection = styled.section`
 const ProjectsSection = (props) => {
   return (
     <ProjectSection>
-      <ParticlesBackground
-        background=" black"
-        particlesConfig={projectsParticlesConfig}
-      />
-
-      <ProjectCard background="rgba(57,121,107,0.5)" image={maImg} />
-      <ProjectCard background="rgba(240,240,240,0.5)" image={tasks} />
+      <ProjectCard background="rgba(240,240,240)" image={tasks} />
+      <ProjectCard background="rgba(255,200,255)" image={tso} />
+      <ProjectCard background="rgba(57,121,107)" image={maImg} />
     </ProjectSection>
   );
 };
