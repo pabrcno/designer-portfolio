@@ -11,6 +11,10 @@ const StyledSection = styled.section`
   background: black;
   font-family: "Syncopate-Bold";
   overflow-x: hidden;
+  color: white;
+  a {
+    color: white;
+  }
 `;
 
 const Column = styled.div`
@@ -25,13 +29,19 @@ const Column = styled.div`
 
 const CloudContainer = styled.span`
   height: 600px;
-
+  color: white;
   a {
     font-family: InputMono;
     pointer-events: none;
-    color: #37a3a2;
-    background-color: #00efc3;
+
+    background-color: #00efc3a2;
     font-size: x-large;
+  }
+`;
+
+const StyledTagClod = styled(TagCloud)`
+  &:a {
+    color: white;
   }
 `;
 
@@ -86,22 +96,12 @@ const TechStackSection = (props) => {
         </h1>
 
         <CloudContainer>
-          <TagCloud
-            tagName={educationTags}
-            speed={0.2}
-            radius={200}
-            style={{ pointerEvent: "none", overflowx: "hidden" }}
-          />
+          <StyledTagClod tagName={educationTags} speed={0.2} radius={200} />
         </CloudContainer>
       </Column>
       <Column>
         <CloudContainer>
-          <TagCloud
-            tagName={techTags}
-            speed={0.2}
-            radius={200}
-            style={{ pointerEvent: "none", overflowx: "hidden" }}
-          />
+          <StyledTagClod tagName={techTags} speed={0.2} radius={200} />
         </CloudContainer>
       </Column>
     </StyledSection>
