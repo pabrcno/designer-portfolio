@@ -6,9 +6,7 @@ import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
 import TechStackSection from "../../components/TechStackSection/TechStackSection";
 import Footer from "../../components/Footer";
-import PageViewer from "../../components/PageViewer/PageViewer";
-import Portfolio from "../Portfolio/Portfolio";
-const StyledMainScreen = styled.div`
+const StyledPortfolioScreen = styled.div`
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -18,8 +16,16 @@ const StyledMainScreen = styled.div`
   cursor: pointer;
 `;
 
-const Main = (props) => {
-  return <Portfolio />;
+const Portfolio = (props) => {
+  return (
+    <StyledPortfolioScreen>
+      <NavBar />
+      <StartingSection />
+      <ProjectsSection />
+      <TechStackSection />
+      <Footer />
+    </StyledPortfolioScreen>
+  );
 };
 
-export default Main;
+export default Portfolio;

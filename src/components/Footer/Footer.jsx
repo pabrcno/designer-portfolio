@@ -23,7 +23,7 @@ const Column = styled.span`
   align-items: space-around;
 
   a {
-    color: #37a3a2;
+    color: #00efc3;
     margin: 1em;
     font-size: large;
   }

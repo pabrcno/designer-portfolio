@@ -3,7 +3,10 @@ import styled from "styled-components";
 import NamePresentation from "./NamePresentation";
 import ParticlesBackground from "../ParticlesBackground";
 import startingParticlesConfig from "../ParticlesBackground/utils/starting-particlesjs-config";
-
+const Section = styled.div`
+  overflow-x: hidden;
+  max-width: 100vw;
+`;
 const StyledSection = styled.section`
   position: absolute;
   top: 30%;
@@ -13,9 +16,9 @@ const StyledSection = styled.section`
 `;
 
 const Subtitle = styled.h2`
-  position: absolute;
+  position: relative;
 
-  top: 90%;
+  bottom: 5%;
   left: 10%;
   color: white;
   margin-left: 40px;
@@ -24,7 +27,7 @@ const Subtitle = styled.h2`
   text-decoration: underline;
   cursor: pointer;
   transition: font-size 1s ease;
-  color: #37a3a2;
+
   &:hover {
     font-size: 2.1em;
   }
@@ -39,7 +42,7 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
   };
 
   return (
-    <>
+    <Section>
       <ParticlesBackground
         background={"black"}
         particlesConfig={startingParticlesConfig}
@@ -70,7 +73,7 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
       >
         PROJECTS
       </Subtitle>
-    </>
+    </Section>
   );
 };
 

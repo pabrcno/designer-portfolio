@@ -7,9 +7,10 @@ const StyledSection = styled.section`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: 80%;
+  width: 95%;
   background: black;
   font-family: "Syncopate-Bold";
+  overflow-x: hidden;
 `;
 
 const Column = styled.div`
@@ -26,7 +27,11 @@ const CloudContainer = styled.span`
   height: 600px;
 
   a {
+    font-family: InputMono;
     pointer-events: none;
+    color: #37a3a2;
+    background-color: #00efc3;
+    font-size: x-large;
   }
 `;
 
@@ -73,7 +78,7 @@ const TechStackSection = (props) => {
           style={{
             marginBottom: "6em",
             fontSize: "2.2em",
-            color: "#37a3a2",
+            color: "white",
             zIndex: 1,
           }}
         >

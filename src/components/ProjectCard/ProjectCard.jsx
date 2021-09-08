@@ -6,7 +6,7 @@ const Card = styled.div`
   display: flex;
   max-height: 800px;
   margin-top: 2em;
-  width: 55%;
+  width: 50%;
   min-width: 500px;
 
   background: ${(props) => `rgba(80, 80, 80, 0.2)`};
