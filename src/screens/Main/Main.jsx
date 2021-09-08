@@ -19,7 +19,12 @@ const StyledMainScreen = styled.div`
 `;
 
 const Main = (props) => {
-  return <Portfolio />;
+  return (
+    <StyledMainScreen>
+      <NavBar />
+      <Portfolio />
+    </StyledMainScreen>
+  );
 };
 
 export default Main;

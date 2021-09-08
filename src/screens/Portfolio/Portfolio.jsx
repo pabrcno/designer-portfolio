@@ -19,7 +19,6 @@ const StyledPortfolioScreen = styled.div`
 const Portfolio = (props) => {
   return (
     <StyledPortfolioScreen>
-      <NavBar />
       <StartingSection />
       <ProjectsSection />
       <TechStackSection />

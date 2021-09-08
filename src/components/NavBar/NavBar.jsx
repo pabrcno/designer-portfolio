@@ -80,9 +80,7 @@ const NavBar = (props) => {
             <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
               ABOUT
             </MenuItem>
-            <MenuItem aria-label="contactButton" classes={classes.subtitle}>
-              CONTACT
-            </MenuItem>
+
             <MenuItem aria-label="workButton" classes={classes.subtitle}>
               PORTFOLIO
             </MenuItem>
@@ -91,9 +89,7 @@ const NavBar = (props) => {
             <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
               ABOUT
             </MenuItem>
-            <MenuItem aria-label="contactButton" classes={classes.subtitle}>
-              CONTACT
-            </MenuItem>
+
             <MenuItem aria-label="workButton" classes={classes.subtitle}>
               PORTFOLIO
             </MenuItem>
