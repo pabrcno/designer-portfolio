@@ -24,7 +24,7 @@ const Subtitle = styled.h2`
   text-decoration: underline;
   cursor: pointer;
   transition: font-size 1s ease;
-
+  color: #37a3a2;
   &:hover {
     font-size: 2.1em;
   }

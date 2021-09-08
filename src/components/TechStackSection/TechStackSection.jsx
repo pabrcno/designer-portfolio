@@ -5,6 +5,7 @@ import ParticlesBackground from "../ParticlesBackground";
 import projectsParticlesConfig from "../ParticlesBackground/utils/tech-particlesjs-config";
 const StyledSection = styled.section`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   width: 80%;
   background: black;
@@ -72,11 +73,11 @@ const TechStackSection = (props) => {
           style={{
             marginBottom: "6em",
             fontSize: "2.2em",
-            color: "#47e3e2",
+            color: "#37a3a2",
             zIndex: 1,
           }}
         >
-          EDUCATION
+          EDUCATION / TECH STACK
         </h1>
 
         <CloudContainer>
@@ -89,17 +90,6 @@ const TechStackSection = (props) => {
         </CloudContainer>
       </Column>
       <Column>
-        <h1
-          style={{
-            marginBottom: "6em",
-            fontSize: "2.2em",
-            color: "mediumorchid",
-            zIndex: 1,
-          }}
-        >
-          TECH STACK
-        </h1>
-
         <CloudContainer>
           <TagCloud
             tagName={techTags}

@@ -5,7 +5,7 @@ import NavBar from "../../components/NavBar/NavBar";
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
 import TechStackSection from "../../components/TechStackSection/TechStackSection";
-
+import Footer from "../../components/Footer";
 const StyledMainScreen = styled.div`
   width: 100vw;
   display: flex;
@@ -27,6 +27,7 @@ const Main = (props) => {
       <StartingSection />
       <ProjectsSection />
       <TechStackSection />
+      <Footer />
     </StyledMainScreen>
   );
 };

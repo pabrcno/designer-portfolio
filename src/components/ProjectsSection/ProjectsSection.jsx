@@ -19,9 +19,9 @@ const ProjectSection = styled.section`
 const ProjectsSection = (props) => {
   return (
     <ProjectSection>
-      <ProjectCard background="rgba(240,240,240)" image={tasks} />
-      <ProjectCard background="rgba(255,200,255)" image={tso} />
-      <ProjectCard background="rgba(57,121,107)" image={maImg} />
+      <ProjectCard background="rgba(255,200,255)" image={tasks} />
+      <ProjectCard background="rgba(57,121,107)" image={tso} />
+      <ProjectCard background="rgba(240,240,240)" image={maImg} />
     </ProjectSection>
   );
 };
