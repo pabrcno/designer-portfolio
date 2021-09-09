@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import styled from "styled-components";
 import NavBar from "../../components/NavBar/NavBar";
 import { Switch, Route } from "react-router-dom";
@@ -22,6 +22,7 @@ const Main = () => {
     <>
       <StyledMainScreen>
         <NavBar />
+
         <Switch>
           <Route exact path="/" component={Portfolio} />
           <Route exact path="/about" component={About} />

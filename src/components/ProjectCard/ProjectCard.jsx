@@ -19,10 +19,12 @@ const Card = styled.div`
   }
 `;
 
-const PresentationCard = ({ image, background }) => {
+const PresentationCard = ({ image, background, href = "" }) => {
   return (
     <Card elevation="5" background={background}>
-      <img src={image} height="100%" width="100%" alt="project" />
+      <a href={href}>
+        <img src={image} height="100%" width="100%" alt="project" />
+      </a>
     </Card>
   );
 };

@@ -36,13 +36,15 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 4em;
+  margin-top: 2.2em;
 `;
 const DescriptionBody = styled.article`
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: x-large;
   color: #292a2c;
+  margin-bottom: 3em;
+  margin-top: -3.5em !important;
 `;
 
 const StyledPaper = styled(Paper)`
@@ -51,7 +53,8 @@ const StyledPaper = styled(Paper)`
   width: 400px;
   margin-left: 2em;
   background-position: center;
-  transition: opacity 0.3s linear 2s;
+
+  margin-bottom: 4em;
 `;
 
 const Paragraph = styled.p`
@@ -60,10 +63,31 @@ const Paragraph = styled.p`
 
 const About = (props) => {
   const firstWords = [
-    "Complete software development combines",
-    "Creativity, Architecture & Design, ",
+    "Meaningful software development combines",
+    "Creativity, Architecture & Design;",
     "clean code and good practices mean",
     "more space for amazing things to be born.",
+  ];
+  const description = [
+    <Paragraph>
+      I come from Trujillo a little town in Venezuela, a pretty place, I started
+      software development 3 years ago and I'm very proud of how as an immigrant
+      I have gone from being a clerk, to be creating stuff that makes people's
+      life better.
+    </Paragraph>,
+    <Paragraph>
+      Through this I like to express what I have in my mind and in the process
+      create value. What everyone wants,be useful and helpful.
+    </Paragraph>,
+    <Paragraph>
+      As a software developer my core strength is mix between design, software
+      architecture and development. I am tech agnostic but my core tech
+      knowledge is us JS with React & Flutter.
+    </Paragraph>,
+    <Paragraph>
+      Thanks for being here. We all live in a hurry and if you read means you
+      like my work. Have a nice day!
+    </Paragraph>,
   ];
   return (
     <AboutScreen>
@@ -80,7 +104,9 @@ const About = (props) => {
 
           <Column>
             <DescriptionBody>
-              <Paragraph></Paragraph>
+              <Trail open={true}>
+                {description.map((paragraph) => paragraph)}
+              </Trail>
             </DescriptionBody>
           </Column>
         </DescriptionContainer>

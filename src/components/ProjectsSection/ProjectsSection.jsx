@@ -19,9 +19,21 @@ const ProjectSection = styled.section`
 const ProjectsSection = (props) => {
   return (
     <ProjectSection>
-      <ProjectCard background="rgba(255,200,255, 0.4)" image={tasks} />
-      <ProjectCard background="rgba(57,121,107, 0.4)" image={tso} />
-      <ProjectCard background="rgba(240,240,240,0.4)" image={maImg} />
+      <ProjectCard
+        href="https://pabrcno.github.io/Tasks/"
+        background="rgba(255,200,255, 0.4)"
+        image={tasks}
+      />
+      <ProjectCard
+        href="https://play.google.com/store/apps/details?id=ar.com.sistematis.tso&hl=es_EC"
+        background="rgba(57,121,107, 0.4)"
+        image={tso}
+      />
+      <ProjectCard
+        href="https://chrome.google.com/webstore/detail/google-meet-attendance-en/dfoeddmkpdeheffinggbeggiebnhhmno?hl=es"
+        background="rgba(240,240,240,0.4)"
+        image={maImg}
+      />
     </ProjectSection>
   );
 };
