@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import me from "../../assets/images/me.svg";
 import Footer from "../../components/Footer";
@@ -90,6 +90,9 @@ const About = (props) => {
       like my work. Have a nice day!
     </Paragraph>,
   ];
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <AboutScreen>
       <Scaffold>
