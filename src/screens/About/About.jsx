@@ -36,7 +36,7 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 2.2em;
+  margin-top: 6.2em;
 `;
 const DescriptionBody = styled.article`
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -59,6 +59,7 @@ const StyledPaper = styled(Paper)`
 
 const Paragraph = styled.p`
   line-height: 2rem;
+  margin-bottom: 2em;
 `;
 
 const About = (props) => {

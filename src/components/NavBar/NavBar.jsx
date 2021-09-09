@@ -95,7 +95,7 @@ const NavBar = (props) => {
                 ABOUT
               </MenuItem>
             </StyledNavLink>
-            <StyledNavLink exact to="/">
+            <StyledNavLink exact to="/portfolio">
               <MenuItem aria-label="workButton" classes={classes.subtitle}>
                 PORTFOLIO
               </MenuItem>
@@ -107,7 +107,7 @@ const NavBar = (props) => {
                 ABOUT
               </MenuItem>
             </StyledNavLink>
-            <StyledNavLink exact to="/">
+            <StyledNavLink exact to="/portfolio">
               <MenuItem aria-label="workButton" classes={classes.subtitle}>
                 PORTFOLIO
               </MenuItem>

@@ -24,7 +24,7 @@ const Main = () => {
         <NavBar />
 
         <Switch>
-          <Route exact path="/" component={Portfolio} />
+          <Route exact path="/portfolio" component={Portfolio} />
           <Route exact path="/about" component={About} />
         </Switch>
       </StyledMainScreen>
