@@ -64,7 +64,8 @@ const Paragraph = styled.p`
 
 const About = (props) => {
   const firstWords = [
-    "Meaningful software development combines",
+    "Meaningful software development ",
+    "is a combination of",
     "Creativity, Architecture & Design;",
     "clean code and good practices mean",
     "more space for amazing things to be born.",
@@ -82,12 +83,12 @@ const About = (props) => {
     </Paragraph>,
     <Paragraph>
       As a software developer my core strength is mix between design, software
-      architecture and development. I am tech agnostic but my core tech
-      knowledge is us JS with React & Flutter.
+      architecture and development. I am tech agnostic but my tech knowledge
+      focuses on JS with React & Flutter.
     </Paragraph>,
     <Paragraph>
-      Thanks for being here. We all live in a hurry and if you read means you
-      like my work. Have a nice day!
+      Thanks for being here. We all live in a hurry and if you read this means
+      you like my work. Have a nice day!
     </Paragraph>,
   ];
   useEffect(() => {
