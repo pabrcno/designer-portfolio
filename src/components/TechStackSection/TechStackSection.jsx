@@ -33,7 +33,7 @@ const CloudContainer = styled.span`
   a {
     font-family: InputMono;
     pointer-events: none;
-
+    padding: 0 1em;
     background-color: #00efc3a2;
     font-size: x-large;
   }

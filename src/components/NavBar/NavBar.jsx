@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
-    padding: "0 9em",
+    padding: "0 12%",
   },
   subtitle: {
     fontFamily: "Syncopate-Bold",
@@ -79,7 +79,7 @@ const NavBar = (props) => {
       <AppBar
         position="static"
         style={{
-          minWidth: "80vw",
+          minWidth: "100vw",
           backgroundColor: "rgba(0,0,1, 0.2)",
         }}
       >

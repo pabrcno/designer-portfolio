@@ -7,12 +7,12 @@ import Portfolio from "../Portfolio/Portfolio";
 import About from "../About";
 
 const StyledMainScreen = styled.div`
-  width: 100vw;
+  width: 98.28vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: black;
-
+  max-width: 100vw;
   min-width: 600px;
   cursor: pointer;
 `;
