@@ -4,8 +4,9 @@ import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
 import Typography from "@material-ui/core/Typography";
-
+import styled from "styled-components";
 import MMenuItem from "@material-ui/core/MenuItem";
+import { NavLink } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   grow: {
@@ -50,6 +51,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const StyledNavLink = styled(NavLink)`
+  color: white;
+  text-decoration: none;
+  &:a {
+    font-family: Syncopate-Bold;
+    transition: font-size 1s ease;
+    &:hover {
+      font-size: 1.2rem;
+    }
+  }
+`;
+
 const MenuItem = ({ ariaLabel, classes, children }) => (
   <MMenuItem>
     <IconButton aria-label={ariaLabel} color="inherit">
@@ -77,22 +90,28 @@ const NavBar = (props) => {
 
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
-            <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
-              ABOUT
-            </MenuItem>
-
-            <MenuItem aria-label="workButton" classes={classes.subtitle}>
-              PORTFOLIO
-            </MenuItem>
+            <StyledNavLink exact to="/about">
+              <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
+                ABOUT
+              </MenuItem>
+            </StyledNavLink>
+            <StyledNavLink exact to="/">
+              <MenuItem aria-label="workButton" classes={classes.subtitle}>
+                PORTFOLIO
+              </MenuItem>
+            </StyledNavLink>
           </div>
           <div className={classes.sectionMobile}>
-            <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
-              ABOUT
-            </MenuItem>
-
-            <MenuItem aria-label="workButton" classes={classes.subtitle}>
-              PORTFOLIO
-            </MenuItem>
+            <StyledNavLink exact to="/about">
+              <MenuItem aria-label="aboutButton" classes={classes.subtitle}>
+                ABOUT
+              </MenuItem>
+            </StyledNavLink>
+            <StyledNavLink exact to="/">
+              <MenuItem aria-label="workButton" classes={classes.subtitle}>
+                PORTFOLIO
+              </MenuItem>
+            </StyledNavLink>
           </div>
         </Toolbar>
       </AppBar>

@@ -1,13 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import styled from "styled-components";
 import NavBar from "../../components/NavBar/NavBar";
+import { Switch, Route, useLocation } from "react-router-dom";
 
-import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
-import StartingSection from "../../components/StartingSection";
-import TechStackSection from "../../components/TechStackSection/TechStackSection";
-import Footer from "../../components/Footer";
-import PageViewer from "../../components/PageViewer/PageViewer";
 import Portfolio from "../Portfolio/Portfolio";
+import About from "../About";
+import { useTransition, animated } from "react-spring";
+import transitions from "@material-ui/core/styles/transitions";
 const StyledMainScreen = styled.div`
   width: 100vw;
   display: flex;
@@ -18,11 +17,15 @@ const StyledMainScreen = styled.div`
   cursor: pointer;
 `;
 
-const Main = (props) => {
+const Main = () => {
   return (
     <StyledMainScreen>
       <NavBar />
-      <Portfolio />
+
+      <Switch>
+        <Route exact path="/" component={Portfolio} />
+        <Route exact path="/about" component={About} />
+      </Switch>
     </StyledMainScreen>
   );
 };
