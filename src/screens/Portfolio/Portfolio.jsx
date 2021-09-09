@@ -13,7 +13,6 @@ const StyledPortfolioScreen = styled.div`
   align-items: center;
   background-color: black;
   min-width: 600px;
-  cursor: pointer;
 `;
 
 const Portfolio = (props) => {

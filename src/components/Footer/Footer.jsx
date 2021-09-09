@@ -54,7 +54,7 @@ const Footer = () => {
             Buenos Aires, Argentina
           </a>
           <p style={{ color: "grey", fontFamily: "InputMono" }}>
-            Copiright - Briceño Design 2021
+            Copyright - Briceño Design 2021
           </p>
         </Column>
       </StyledSection>

@@ -15,15 +15,14 @@ const useStyles = makeStyles((theme) => ({
     top: 0,
     zIndex: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
+
   title: {
     display: "none",
     fontFamily: "Syncopate-Bold",
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
+    padding: "0 9em",
   },
   subtitle: {
     fontFamily: "Syncopate-Bold",
@@ -42,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       display: "flex",
     },
+    padding: "0 9em",
   },
   sectionMobile: {
     display: "flex",
@@ -80,7 +80,7 @@ const NavBar = (props) => {
         position="static"
         style={{
           minWidth: "80vw",
-          backgroundColor: "rgba(0,0,0,0.2)",
+          backgroundColor: "rgba(0,0,1, 0.2)",
         }}
       >
         <Toolbar>
