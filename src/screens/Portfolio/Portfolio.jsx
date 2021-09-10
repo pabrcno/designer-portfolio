@@ -1,7 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
-import NavBar from "../../components/NavBar/NavBar";
-
 import ProjectsSection from "../../components/ProjectsSection/ProjectsSection";
 import StartingSection from "../../components/StartingSection";
 import TechStackSection from "../../components/TechStackSection/TechStackSection";
@@ -16,6 +14,9 @@ const StyledPortfolioScreen = styled.div`
 `;
 
 const Portfolio = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 70);
+  }, []);
   return (
     <StyledPortfolioScreen>
       <StartingSection />

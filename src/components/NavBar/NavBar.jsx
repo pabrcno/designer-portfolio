@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       display: "block",
     },
-    padding: "0 12%",
+    padding: "0 11.7%",
   },
   subtitle: {
     fontFamily: "Syncopate-Bold",
@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       display: "flex",
     },
-    padding: "0 9em",
+    padding: "0 8em",
   },
   sectionMobile: {
     display: "flex",

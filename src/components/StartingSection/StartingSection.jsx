@@ -27,7 +27,7 @@ const Subtitle = styled.h2`
   text-decoration: underline;
   cursor: pointer;
   transition: font-size 1s ease;
-
+  margin-left: 2em;
   &:hover {
     font-size: 2.1em;
   }
@@ -62,7 +62,7 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
         ref={messagesEndRef}
         style={{
           position: "absolute",
-          top: "80%",
+          top: "90%",
           left: "10%",
         }}
       ></div>

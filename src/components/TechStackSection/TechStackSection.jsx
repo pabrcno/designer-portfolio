@@ -90,6 +90,7 @@ const TechStackSection = (props) => {
             fontSize: "2.2em",
             color: "white",
             zIndex: 1,
+            marginLeft: "2em",
           }}
         >
           EDUCATION / TECH STACK
