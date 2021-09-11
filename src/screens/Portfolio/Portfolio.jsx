@@ -12,7 +12,26 @@ const StyledPortfolioScreen = styled.div`
   background-color: black;
   min-width: 600px;
 `;
-
+const Subtitle = styled.h2`
+  color: white;
+  z-index: 1;
+  font-size: 2em;
+  font-family: Syncopate-Bold;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: font-size 1s ease;
+  margin-bottom: 2em;
+  margin-left: 2em;
+  &:hover {
+    font-size: 2.1em;
+  }
+  &:active {
+    font-size: 2em;
+  }
+  a {
+    color: white;
+  }
+`;
 const Portfolio = (props) => {
   useEffect(() => {
     window.scrollTo(0, 70);
@@ -22,6 +41,9 @@ const Portfolio = (props) => {
       <StartingSection />
       <ProjectsSection />
       <TechStackSection />
+      <Subtitle>
+        <a href="mailto:pabrcn@gmail.com">contact me</a>
+      </Subtitle>
       <Footer />
     </StyledPortfolioScreen>
   );

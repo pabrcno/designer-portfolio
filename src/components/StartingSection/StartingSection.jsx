@@ -10,7 +10,7 @@ const Section = styled.div`
 `;
 const StyledSection = styled.section`
   position: absolute;
-  top: 30%;
+  top: 25%;
   left: 10%;
   display: flex;
   cursor: pointer;
@@ -28,6 +28,7 @@ const Subtitle = styled.h2`
   cursor: pointer;
   transition: font-size 1s ease;
   margin-left: 2em;
+
   &:hover {
     font-size: 2.1em;
   }
@@ -51,10 +52,10 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
       <StyledSection>
         <NamePresentation
           textList={[
-            "HI! I'M PAULO BRCN",
-            " A SOFTWARE CREATOR",
+            "PAULO BRICEÑO",
+            "SOFTWARE DEVELOPER",
             "LIVING IN",
-            " BUENOS AIRES, AR",
+            "BUENOS AIRES, AR",
           ]}
         />
       </StyledSection>

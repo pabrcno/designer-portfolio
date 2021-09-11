@@ -6,16 +6,27 @@ const Card = styled.div`
   display: flex;
   max-height: 800px;
   margin-top: 2em;
-  width: 50%;
+  width: 40%;
   min-width: 500px;
 
   background: ${(props) => `rgba(80, 80, 80, 0.2)`};
-  backdrop-filter: blur(2px);
+  z-index: 1;
   cursor: pointer;
   padding: 2em;
-  transition: background 1s ease;
+  transition: all 700ms ease;
   &:hover {
     background: ${(props) => props.background};
+    width: 45%;
+  }
+  img {
+    transition: all 1s ease;
+    opacity: 0.8;
+
+    &:hover {
+      transition: all 1s ease;
+      height: 99%;
+      opacity: 1;
+    }
   }
 `;
 

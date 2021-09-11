@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import TagCloud from "react3dtagcloud";
 import ParticlesBackground from "../ParticlesBackground";
-import projectsParticlesConfig from "../ParticlesBackground/utils/tech-particlesjs-config";
+import techParticlesConfig from "../ParticlesBackground/utils/tech-particlesjs-config";
 const StyledSection = styled.section`
   display: flex;
   flex-wrap: wrap;
@@ -11,6 +11,7 @@ const StyledSection = styled.section`
   background: black;
   font-family: "Syncopate-Bold";
   overflow-x: hidden;
+  margin-top: 4em;
   color: white;
   a {
     color: white;
@@ -30,20 +31,18 @@ const Column = styled.div`
 const CloudContainer = styled.span`
   height: 600px;
   color: white;
+
   a {
+    font-size: x-large !important;
     font-family: InputMono;
     pointer-events: none;
     padding: 0 1em;
-    background-color: #00efc3a2;
-    font-size: x-large;
+
+    background-color: #40fff322;
   }
 `;
 
-const StyledTagClod = styled(TagCloud)`
-  &:a {
-    color: white !important;
-  }
-`;
+const StyledTagClod = styled(TagCloud)``;
 
 const TechStackSection = (props) => {
   const techTags = [
@@ -61,7 +60,6 @@ const TechStackSection = (props) => {
     "react-spring",
     "Chrome Extensions",
     "Dart",
-    "Graphic Design",
     "Design Patterns",
     "OOP",
     "TDD",
@@ -83,6 +81,10 @@ const TechStackSection = (props) => {
 
   return (
     <StyledSection>
+      <ParticlesBackground
+        position="absolute"
+        particlesConfig={techParticlesConfig}
+      />
       <Column>
         <h1
           style={{

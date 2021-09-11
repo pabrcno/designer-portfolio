@@ -7,7 +7,7 @@ import Portfolio from "../Portfolio/Portfolio";
 import About from "../About";
 
 const StyledMainScreen = styled.div`
-  width: 98.28vw;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -15,6 +15,7 @@ const StyledMainScreen = styled.div`
   max-width: 100vw;
   min-width: 600px;
   cursor: pointer;
+  overflow-x: hidden;
 `;
 
 const Main = () => {

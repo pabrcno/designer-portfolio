@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Trail from "../../Trail/Trail";
 
 const NameHolder = styled.span`
-  font-size: ${(props) => (props.isWindowSmall ? "1.8em" : "2.2em")};
+  font-size: ${(props) => (props.isWindowSmall ? "1.8em" : "2.5em")};
   color: whitesmoke;
   font-weight: 950;
   font-family: Syncopate-Bold;

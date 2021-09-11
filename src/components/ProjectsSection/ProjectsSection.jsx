@@ -13,28 +13,35 @@ const ProjectSection = styled.section`
   justify-content: center;
   padding-bottom: 5em;
   align-items: center;
-  background-color: black;
+
   flex-direction: column;
 `;
 const ProjectsSection = (props) => {
   return (
-    <ProjectSection>
-      <ProjectCard
-        href="https://pabrcno.github.io/Tasks/"
-        background="rgba(255,200,255, 0.4)"
-        image={tasks}
-      />
-      <ProjectCard
-        href="https://play.google.com/store/apps/details?id=ar.com.sistematis.tso&hl=es_EC"
-        background="rgba(57,121,107, 0.4)"
-        image={tso}
-      />
-      <ProjectCard
-        href="https://chrome.google.com/webstore/detail/google-meet-attendance-en/dfoeddmkpdeheffinggbeggiebnhhmno?hl=es"
-        background="rgba(240,240,240,0.4)"
-        image={maImg}
-      />
-    </ProjectSection>
+    <>
+      <ProjectSection>
+        <ParticlesBackground
+          position="absolute"
+          particlesConfig={projectsParticlesConfig}
+        />
+
+        <ProjectCard
+          href="https://pabrcno.github.io/Tasks/"
+          background="#40fff322"
+          image={tasks}
+        />
+        <ProjectCard
+          href="https://play.google.com/store/apps/details?id=ar.com.sistematis.tso&hl=es_EC"
+          background="#40fff322"
+          image={tso}
+        />
+        <ProjectCard
+          href="https://chrome.google.com/webstore/detail/google-meet-attendance-en/dfoeddmkpdeheffinggbeggiebnhhmno?hl=es"
+          background="#40fff322"
+          image={maImg}
+        />
+      </ProjectSection>
+    </>
   );
 };
 
