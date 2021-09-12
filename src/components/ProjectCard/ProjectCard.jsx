@@ -6,7 +6,7 @@ const Card = styled.div`
   display: flex;
   max-height: 800px;
   margin-top: 2em;
-  width: 40%;
+  width: 45%;
   min-width: 500px;
 
   background: ${(props) => `rgba(80, 80, 80, 0.2)`};
@@ -16,7 +16,7 @@ const Card = styled.div`
   transition: all 700ms ease;
   &:hover {
     background: ${(props) => props.background};
-    width: 45%;
+    width: 50%;
   }
   img {
     transition: all 1s ease;

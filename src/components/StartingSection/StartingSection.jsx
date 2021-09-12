@@ -10,7 +10,7 @@ const Section = styled.div`
 `;
 const StyledSection = styled.section`
   position: absolute;
-  top: 25%;
+  top: 30%;
   left: 10%;
   display: flex;
   cursor: pointer;
@@ -18,7 +18,7 @@ const StyledSection = styled.section`
 
 const Subtitle = styled.h2`
   position: ${(props) => (isMobile ? "" : "absolute")};
-  bottom: 10%;
+  bottom: 2%;
   right: 10%;
   color: white;
   z-index: 1;
@@ -36,6 +36,42 @@ const Subtitle = styled.h2`
     font-size: 2em;
   }
 `;
+const ContactMeBadge = styled.section`
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  margin-top: 2em;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  padding: 0 1em 0 2em;
+
+  margin-left: 80%;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-family: InputMono;
+  font-size: small;
+  transition: all 700ms ease;
+  transform: rotate(35deg);
+  margin-right: 150px;
+  rotate: 45;
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 155px;
+    height: 155px;
+    transform: rotate(0deg);
+    font-size: medium;
+  }
+  a {
+    color: black;
+    text-decoration: none;
+    transition: all 700ms ease;
+    &:hover {
+      transition: all 700ms ease;
+    }
+  }
+`;
 const StartingSection = ({ setY, scrollDestinationRef }) => {
   const messagesEndRef = useRef(null);
   const scrollToBottom = () => {
@@ -43,38 +79,46 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
   };
 
   return (
-    <Section>
-      <ParticlesBackground
-        background={"black"}
-        particlesConfig={startingParticlesConfig}
-        styles={{ cursor: "pointer" }}
-      />
-      <StyledSection>
-        <NamePresentation
-          textList={[
-            "PAULO BRICEÑO",
-            "SOFTWARE DEVELOPER",
-            "LIVING IN",
-            "BUENOS AIRES, AR",
-          ]}
+    <>
+      <Section>
+        <ParticlesBackground
+          background={"black"}
+          particlesConfig={startingParticlesConfig}
+          styles={{ cursor: "pointer" }}
         />
-      </StyledSection>
-      <div
-        ref={messagesEndRef}
-        style={{
-          position: "absolute",
-          top: "90%",
-          left: "10%",
-        }}
-      ></div>
-      <Subtitle
-        onClick={() => {
-          scrollToBottom();
-        }}
-      >
-        PROJECTS
-      </Subtitle>
-    </Section>
+
+        <StyledSection>
+          <NamePresentation
+            textList={[
+              "PAULO BRICEÑO",
+              "SOFTWARE DEVELOPER",
+              "LIVING IN",
+              "BUENOS AIRES, AR",
+            ]}
+          />
+        </StyledSection>
+        <div
+          ref={messagesEndRef}
+          style={{
+            position: "absolute",
+            top: "80%",
+            left: "10%",
+          }}
+        ></div>
+        <Subtitle
+          onClick={() => {
+            scrollToBottom();
+          }}
+        >
+          PROJECTS
+        </Subtitle>
+      </Section>
+      <ContactMeBadge>
+        <a href="mailto:pabrcn@gmail.com">
+          <h2>Let's work together!</h2>
+        </a>
+      </ContactMeBadge>
+    </>
   );
 };
 

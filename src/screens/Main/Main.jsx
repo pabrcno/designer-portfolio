@@ -15,7 +15,6 @@ const StyledMainScreen = styled.div`
   max-width: 100vw;
   min-width: 600px;
   cursor: pointer;
-  overflow-x: hidden;
 `;
 
 const Main = () => {

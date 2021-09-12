@@ -27,17 +27,17 @@ const ProjectsSection = (props) => {
 
         <ProjectCard
           href="https://pabrcno.github.io/Tasks/"
-          background="#40fff322"
+          background="#40fff332"
           image={tasks}
         />
         <ProjectCard
           href="https://play.google.com/store/apps/details?id=ar.com.sistematis.tso&hl=es_EC"
-          background="#40fff322"
+          background="#40fff332"
           image={tso}
         />
         <ProjectCard
           href="https://chrome.google.com/webstore/detail/google-meet-attendance-en/dfoeddmkpdeheffinggbeggiebnhhmno?hl=es"
-          background="#40fff322"
+          background="#40fff332"
           image={maImg}
         />
       </ProjectSection>

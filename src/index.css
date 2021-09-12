@@ -1,9 +1,9 @@
 ::-moz-selection {
-  background-color: darkgray;
+  background-color: #40fff332;
   color: white;
 }
 ::selection {
-  background-color: darkgray;
+  background-color: #40fff332;
   color: white;
 }
 body::-webkit-scrollbar {

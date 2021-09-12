@@ -38,7 +38,7 @@ const CloudContainer = styled.span`
     pointer-events: none;
     padding: 0 1em;
 
-    background-color: #40fff322;
+    background-color: #40fff332;
   }
 `;
 
@@ -93,6 +93,7 @@ const TechStackSection = (props) => {
             color: "white",
             zIndex: 1,
             marginLeft: "2em",
+            textDecoration: "underline",
           }}
         >
           EDUCATION / TECH STACK
