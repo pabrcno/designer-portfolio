@@ -7,7 +7,7 @@ const Card = styled.div`
   max-height: 800px;
   margin-top: 2em;
   width: 45%;
-  min-width: 500px;
+  min-width: 400px;
 
   background: ${(props) => `rgba(80, 80, 80, 0.2)`};
   z-index: 1;
@@ -16,10 +16,10 @@ const Card = styled.div`
   transition: all 700ms ease;
   &:hover {
     background: ${(props) => props.background};
-    width: 50%;
+    width: 48%;
   }
   img {
-    transition: all 1s ease;
+    transition: all 0.7s ease;
     opacity: 0.8;
 
     &:hover {

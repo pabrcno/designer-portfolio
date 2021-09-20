@@ -10,7 +10,7 @@ const StyledSection = styled.section`
   width: 95%;
   background: black;
   font-family: "Syncopate-Bold";
-  overflow-x: hidden;
+
   margin-top: 4em;
   color: white;
   a {
@@ -19,11 +19,10 @@ const StyledSection = styled.section`
 `;
 
 const Column = styled.div`
-  width: 50%;
+  width: 45%;
 
   height: 100%;
   display: flex;
-  align-items: center;
 
   flex-direction: column;
 `;
@@ -66,6 +65,7 @@ const TechStackSection = (props) => {
     "DDD",
     "FireBase",
     "SOLID",
+    "GetX",
   ];
   const educationTags = [
     "Harvard CS50",
@@ -100,12 +100,12 @@ const TechStackSection = (props) => {
         </h1>
 
         <CloudContainer>
-          <StyledTagClod tagName={educationTags} speed={0.2} radius={200} />
+          <StyledTagClod tagName={educationTags} speed={0.2} radius={220} />
         </CloudContainer>
       </Column>
       <Column>
         <CloudContainer>
-          <StyledTagClod tagName={techTags} speed={0.2} radius={200} />
+          <StyledTagClod tagName={techTags} speed={0.2} radius={250} />
         </CloudContainer>
       </Column>
     </StyledSection>

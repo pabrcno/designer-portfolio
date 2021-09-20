@@ -1,8 +1,5 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import styled from "styled-components";
-
-import ParticlesBackground from "../ParticlesBackground";
-import startingParticlesConfig from "../ParticlesBackground/utils/starting-particlesjs-config";
 
 const StyledSection = styled.section`
   display: flex;
@@ -23,6 +20,7 @@ const Column = styled.span`
   align-items: space-around;
 
   a {
+    z-index: 1;
     color: #40fff3a2;
     margin: 1em;
     font-size: large;

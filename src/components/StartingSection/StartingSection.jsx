@@ -52,7 +52,7 @@ const ContactMeBadge = styled.section`
   background-color: rgba(255, 255, 255, 0.6);
   font-family: InputMono;
   font-size: small;
-  transition: all 700ms ease;
+  transition: all 250ms ease;
   transform: rotate(35deg);
   margin-right: 150px;
   rotate: 45;
@@ -61,14 +61,15 @@ const ContactMeBadge = styled.section`
     width: 155px;
     height: 155px;
     transform: rotate(0deg);
-    font-size: medium;
+    font-size: 0.9em;
   }
   a {
+    margin-left: 5%;
     color: black;
     text-decoration: none;
-    transition: all 700ms ease;
+    transition: all 200ms ease;
     &:hover {
-      transition: all 700ms ease;
+      transition: all 200ms ease;
     }
   }
 `;
