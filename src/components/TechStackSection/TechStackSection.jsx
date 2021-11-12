@@ -35,9 +35,12 @@ const CloudContainer = styled.span`
     font-size: x-large !important;
     font-family: InputMono;
     pointer-events: none;
-    padding: 0 1em;
+    padding: 0.1em 1em;
 
-    background-color: #40fff332;
+    background-color: #40fff345;
+    &:hover {
+      transform: scale(1.5, 1.5);
+    }
   }
 `;
 
@@ -100,12 +103,12 @@ const TechStackSection = (props) => {
         </h1>
 
         <CloudContainer>
-          <StyledTagClod tagName={educationTags} speed={0.2} radius={220} />
+          <StyledTagClod tagName={educationTags} speed={0.1} radius={280} />
         </CloudContainer>
       </Column>
       <Column>
         <CloudContainer>
-          <StyledTagClod tagName={techTags} speed={0.2} radius={250} />
+          <StyledTagClod tagName={techTags} speed={0.1} radius={300} />
         </CloudContainer>
       </Column>
     </StyledSection>

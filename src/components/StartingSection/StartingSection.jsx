@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef } from "react";
 import styled from "styled-components";
 import NamePresentation from "./NamePresentation";
 import ParticlesBackground from "../ParticlesBackground";
@@ -30,17 +30,16 @@ const Subtitle = styled.h2`
   margin-left: 2em;
 
   &:hover {
-    font-size: 2.1em;
+    font-size: 2.5em;
   }
   &:active {
     font-size: 2em;
   }
 `;
 const ContactMeBadge = styled.section`
-  border-radius: 50%;
   position: absolute;
   display: flex;
-  margin-top: 2em;
+  margin-top: 3em;
   justify-content: center;
   align-items: center;
   width: 150px;
@@ -48,26 +47,26 @@ const ContactMeBadge = styled.section`
   padding: 0 1em 0 2em;
 
   margin-left: 80%;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.6);
+  color: white;
+  background-color: #40fff335;
   font-family: InputMono;
-  font-size: small;
-  transition: all 250ms ease;
+
+  transition: all 400ms ease;
   transform: rotate(35deg);
   margin-right: 150px;
   rotate: 45;
   &:hover {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: #40fff385;
     width: 155px;
     height: 155px;
-    transform: rotate(0deg);
-    font-size: 0.9em;
+    transform: scale(1.3, 1.3) rotate(0deg);
   }
   a {
     margin-left: 5%;
-    color: black;
+    color: white;
+
     text-decoration: none;
-    transition: all 200ms ease;
+    transition: all 400ms ease;
     &:hover {
       transition: all 200ms ease;
     }
