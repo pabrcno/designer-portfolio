@@ -10,7 +10,7 @@ const Section = styled.div`
 `;
 const StyledSection = styled.section`
   position: absolute;
-  top: 30%;
+  top: ${(props) => (isMobile ? "20%" : "30%")};
   left: 10%;
   display: flex;
   cursor: pointer;
@@ -86,7 +86,6 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
           particlesConfig={startingParticlesConfig}
           styles={{ cursor: "pointer" }}
         />
-
         <StyledSection>
           <NamePresentation
             textList={[

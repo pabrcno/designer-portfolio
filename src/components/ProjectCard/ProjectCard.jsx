@@ -7,7 +7,8 @@ const Card = styled.div`
   max-height: 800px;
   margin-top: 2em;
   width: 45%;
-  min-width: 400px;
+
+  min-width: 650px;
 
   background: ${(props) => `rgba(80, 80, 80, 0.2)`};
   z-index: 1;

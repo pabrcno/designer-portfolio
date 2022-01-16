@@ -65,10 +65,6 @@ const TechStackSection = (props) => {
     "Design Patterns",
     "OOP",
     "TDD",
-    "DDD",
-    "FireBase",
-    "SOLID",
-    "GetX",
   ];
   const educationTags = [
     "Harvard CS50",
@@ -80,6 +76,10 @@ const TechStackSection = (props) => {
     "UTN",
     "Design principles",
     "Business Management",
+    "DDD",
+    "FireBase",
+    "SOLID",
+    "GetX",
   ];
 
   return (
@@ -91,7 +91,7 @@ const TechStackSection = (props) => {
       <Column>
         <h1
           style={{
-            marginBottom: "6em",
+            marginBottom: "10em",
             fontSize: "2.2em",
             color: "white",
             zIndex: 1,
@@ -103,12 +103,12 @@ const TechStackSection = (props) => {
         </h1>
 
         <CloudContainer>
-          <StyledTagClod tagName={educationTags} speed={0.1} radius={280} />
+          <StyledTagClod tagName={educationTags} speed={0.3} radius={280} />
         </CloudContainer>
       </Column>
       <Column>
         <CloudContainer>
-          <StyledTagClod tagName={techTags} speed={0.1} radius={300} />
+          <StyledTagClod tagName={techTags} speed={0.3} radius={300} />
         </CloudContainer>
       </Column>
     </StyledSection>
