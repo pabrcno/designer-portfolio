@@ -23,7 +23,7 @@ const Column = styled.span`
     z-index: 1;
     color: #40fff3a2;
     margin: 1em;
-    font-size: large;
+    font-size: 1.8em;
   }
 `;
 const Title = styled.h1`
