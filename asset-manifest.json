@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.dc1e93a9.chunk.css",
-    "main.js": "/portfolio/static/js/main.0a0ac613.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.0a0ac613.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.b07e1603.chunk.css",
+    "main.js": "/portfolio/static/js/main.01f098aa.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.01f098aa.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.cbade7b9.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.cbade7b9.js.map",
-    "static/js/2.34bdb155.chunk.js": "/portfolio/static/js/2.34bdb155.chunk.js",
-    "static/js/2.34bdb155.chunk.js.map": "/portfolio/static/js/2.34bdb155.chunk.js.map",
+    "static/js/2.d3cba43c.chunk.js": "/portfolio/static/js/2.d3cba43c.chunk.js",
+    "static/js/2.d3cba43c.chunk.js.map": "/portfolio/static/js/2.d3cba43c.chunk.js.map",
     "static/js/3.baa3df13.chunk.js": "/portfolio/static/js/3.baa3df13.chunk.js",
     "static/js/3.baa3df13.chunk.js.map": "/portfolio/static/js/3.baa3df13.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.dc1e93a9.chunk.css.map": "/portfolio/static/css/main.dc1e93a9.chunk.css.map",
-    "static/js/2.34bdb155.chunk.js.LICENSE.txt": "/portfolio/static/js/2.34bdb155.chunk.js.LICENSE.txt",
+    "static/css/main.b07e1603.chunk.css.map": "/portfolio/static/css/main.b07e1603.chunk.css.map",
+    "static/js/2.d3cba43c.chunk.js.LICENSE.txt": "/portfolio/static/js/2.d3cba43c.chunk.js.LICENSE.txt",
     "static/media/InputMono-Regular.437884ff.ttf": "/portfolio/static/media/InputMono-Regular.437884ff.ttf",
     "static/media/Syncopate-Bold.13e5112f.ttf": "/portfolio/static/media/Syncopate-Bold.13e5112f.ttf",
-    "static/media/me.e14252b5.svg": "/portfolio/static/media/me.e14252b5.svg",
-    "static/media/meetAssistant.87b9c1ad.svg": "/portfolio/static/media/meetAssistant.87b9c1ad.svg",
-    "static/media/tasks.8f569e16.svg": "/portfolio/static/media/tasks.8f569e16.svg",
-    "static/media/tso.f5a161dd.svg": "/portfolio/static/media/tso.f5a161dd.svg"
+    "static/media/me.c8d3769d.svg": "/portfolio/static/media/me.c8d3769d.svg",
+    "static/media/meetAssistant.c840a1af.svg": "/portfolio/static/media/meetAssistant.c840a1af.svg",
+    "static/media/tasks.bce75402.svg": "/portfolio/static/media/tasks.bce75402.svg",
+    "static/media/tso.611dd271.svg": "/portfolio/static/media/tso.611dd271.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cbade7b9.js",
-    "static/js/2.34bdb155.chunk.js",
-    "static/css/main.dc1e93a9.chunk.css",
-    "static/js/main.0a0ac613.chunk.js"
+    "static/js/2.d3cba43c.chunk.js",
+    "static/css/main.b07e1603.chunk.css",
+    "static/js/main.01f098aa.chunk.js"
   ]
 }
