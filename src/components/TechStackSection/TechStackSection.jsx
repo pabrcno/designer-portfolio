@@ -1,116 +1,73 @@
 import React from "react";
 import styled from "styled-components";
 import TagCloud from "react3dtagcloud";
-import ParticlesBackground from "../ParticlesBackground";
-import techParticlesConfig from "../ParticlesBackground/utils/tech-particlesjs-config";
+
+import { isMobile } from "react-device-detect";
 const StyledSection = styled.section`
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
   width: 95%;
   background: black;
+  margin-right: 3em;
   font-family: "Syncopate-Bold";
-
-  margin-top: 4em;
+  padding: 0 20%;
+  justify-content: center;
   color: white;
   a {
+    font-size: 1em;
     color: white;
   }
-`;
-
-const Column = styled.div`
-  width: 45%;
-
-  height: 100%;
-  display: flex;
-
-  flex-direction: column;
 `;
 
 const CloudContainer = styled.span`
   height: 600px;
   color: white;
-
+  margin-top: 10em;
   a {
-    font-size: x-large !important;
-    font-family: InputMono;
     pointer-events: none;
-    padding: 0.1em 1em;
-
-    background-color: #40fff345;
-    &:hover {
-      transform: scale(1.5, 1.5);
-    }
   }
 `;
 
-const StyledTagClod = styled(TagCloud)``;
+const TechStackTitle = styled.h1`
+  font-size: 3.5em;
+  text-decoration: underline;
+`;
+
+const StyledTagClod = styled(TagCloud)`
+  margin-top: 10em;
+`;
 
 const TechStackSection = (props) => {
   const techTags = [
-    "JS",
-    "ES6",
     "Flutter",
     "React.js",
     "Systems Architecture",
     "Redux.js",
-    "Jest",
-    "Algorithms",
     "Creative Process",
     "Typescript",
-    "Enzyme",
-    "react-spring",
     "Chrome Extensions",
     "Dart",
-    "Design Patterns",
-    "OOP",
-    "TDD",
-  ];
-  const educationTags = [
-    "Harvard CS50",
     "Clean architecture",
-    "Clean Code",
-    "Programming Principles",
     "Information Systems Engineering",
-    "Xtreme Programing",
-    "UTN",
-    "Design principles",
-    "Business Management",
-    "DDD",
+    "JAVA",
+    "Spring",
     "FireBase",
-    "SOLID",
-    "GetX",
+    "TDD",
   ];
 
   return (
     <StyledSection>
-      <ParticlesBackground
-        position="absolute"
-        particlesConfig={techParticlesConfig}
-      />
-      <Column>
-        <h1
-          style={{
-            marginBottom: "10em",
-            fontSize: "2.2em",
-            color: "white",
-            zIndex: 1,
-            marginLeft: "2em",
-            textDecoration: "underline",
-          }}
-        >
-          EDUCATION / TECH STACK
-        </h1>
+      <TechStackTitle>TECH STACK</TechStackTitle>
 
-        <CloudContainer>
-          <StyledTagClod tagName={educationTags} speed={0.3} radius={280} />
-        </CloudContainer>
-      </Column>
-      <Column>
-        <CloudContainer>
-          <StyledTagClod tagName={techTags} speed={0.3} radius={300} />
-        </CloudContainer>
-      </Column>
+      <CloudContainer>
+        <StyledTagClod
+          tagName={techTags}
+          speed={0.3}
+          radius={isMobile ? 250 : 280}
+        />
+      </CloudContainer>
     </StyledSection>
   );
 };

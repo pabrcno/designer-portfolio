@@ -13,7 +13,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     position: "sticky",
     top: 0,
-    zIndex: 1,
+    zIndex: 2,
   },
 
   title: {
@@ -26,11 +26,10 @@ const useStyles = makeStyles((theme) => ({
     padding: "0 4.5em",
   },
   subtitle: {
+    fontSize: "1.3em",
     fontFamily: "Syncopate-Bold",
     transition: "font-size 1s ease",
-    "&:hover": {
-      fontSize: "1.2rem",
-    },
+    marginTop: "0.5em",
   },
   inputRoot: {
     color: "inherit",
@@ -42,13 +41,14 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up("md")]: {
       display: "flex",
     },
-    padding: "0 0em",
+    padding: "0 1em",
   },
   sectionMobile: {
     display: "flex",
     [theme.breakpoints.up("md")]: {
       display: "none",
     },
+    padding: "0 1em",
   },
 }));
 
@@ -85,10 +85,6 @@ const NavBar = (props) => {
         }}
       >
         <Toolbar>
-          <Typography className={classes.title} variant="h6" noWrap>
-            PABRCN
-          </Typography>
-
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <StyledNavLink exact to="/about">

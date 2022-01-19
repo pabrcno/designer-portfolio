@@ -22,21 +22,15 @@ const Subtitle = styled.h2`
   right: 10%;
   color: white;
   z-index: 1;
-  font-size: 2em;
+  font-size: 3em;
   font-family: Syncopate-Bold;
   text-decoration: underline;
   cursor: pointer;
   transition: font-size 1s ease;
-  margin-left: 2em;
-
-  &:hover {
-    font-size: 2.5em;
-  }
-  &:active {
-    font-size: 2em;
-  }
+  margin-left: 1.5em;
 `;
 const ContactMeBadge = styled.section`
+  layout: none;
   position: absolute;
   display: flex;
   margin-top: 3em;
@@ -96,15 +90,9 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
             ]}
           />
         </StyledSection>
-        <div
-          ref={messagesEndRef}
-          style={{
-            position: "absolute",
-            top: "80%",
-            left: "10%",
-          }}
-        ></div>
+
         <Subtitle
+          ref={messagesEndRef}
           onClick={() => {
             scrollToBottom();
           }}
@@ -112,11 +100,6 @@ const StartingSection = ({ setY, scrollDestinationRef }) => {
           PROJECTS
         </Subtitle>
       </Section>
-      <ContactMeBadge>
-        <a href="mailto:pabrcn@gmail.com">
-          <h2>Let's work together!</h2>
-        </a>
-      </ContactMeBadge>
     </>
   );
 };
