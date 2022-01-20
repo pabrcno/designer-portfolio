@@ -4,6 +4,7 @@ import me from "../../assets/images/me.svg";
 import Footer from "../../components/Footer";
 import Trail from "../../components/Trail/Trail";
 import Paper from "@material-ui/core/Paper";
+import { isMobile } from "react-device-detect";
 const AboutScreen = styled.div`
   display: flex;
   flex-direction: column;
@@ -14,7 +15,10 @@ const AboutScreen = styled.div`
 `;
 
 const Scaffold = styled.div`
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  width: ${(_) => (isMobile ? "90%" : "70%")};
+  align-items: ${(_) => (isMobile ? "center" : "flex-start")};
 `;
 
 const FirstWords = styled.article`
@@ -25,7 +29,7 @@ const FirstWords = styled.article`
 `;
 
 const Column = styled.div`
-  width: 50%;
+  width: ${(_) => (isMobile ? "100%" : "50%")};
   min-width: 400px;
   display: flex;
 
@@ -49,16 +53,17 @@ const DescriptionBody = styled.article`
 
 const StyledPaper = styled(Paper)`
   background-image: url(${me});
-  height: 400px;
-  width: 400px;
+  height: ${(_) => (isMobile ? "600px" : "400px")};
+  width: ${(_) => (isMobile ? "600px" : "400px")};
   margin-left: 2em;
+
   background-position: center;
 
   margin-bottom: 4em;
 `;
 
 const Paragraph = styled.p`
-  line-height: 2rem;
+  line-height: 2.6rem;
   margin-bottom: 2em;
 `;
 
@@ -83,8 +88,8 @@ const About = (props) => {
     </Paragraph>,
     <Paragraph>
       As a software developer my core strength is mix between design, software
-      architecture and development. I am tech agnostic but my tech knowledge
-      focuses on JS with React & Flutter.
+      architecture and development. I am tech agnostic and I have demonstrated I
+      can learn anything that I feel passionate for.
     </Paragraph>,
     <Paragraph>
       Thanks for being here. We all live in a hurry and if you read this means

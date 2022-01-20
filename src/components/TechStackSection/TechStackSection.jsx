@@ -26,6 +26,7 @@ const CloudContainer = styled.span`
   color: white;
   margin-top: 10em;
   a {
+    font-size: 1em;
     pointer-events: none;
   }
 `;
@@ -55,6 +56,9 @@ const TechStackSection = (props) => {
     "Spring",
     "FireBase",
     "TDD",
+    "CI/CD",
+    "Git",
+    "Agile",
   ];
 
   return (
@@ -65,7 +69,7 @@ const TechStackSection = (props) => {
         <StyledTagClod
           tagName={techTags}
           speed={0.3}
-          radius={isMobile ? 250 : 280}
+          radius={isMobile ? 250 : 270}
         />
       </CloudContainer>
     </StyledSection>
