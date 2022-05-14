@@ -11,7 +11,7 @@ const Section = styled.div`
 const StyledSection = styled.section`
   position: absolute;
   top: ${(props) => (isMobile ? "20%" : "30%")};
-  left: 10%;
+  left: 5%;
   display: flex;
   cursor: pointer;
 `;
@@ -22,6 +22,7 @@ const Subtitle = styled.h2`
   right: 10%;
   color: white;
   z-index: 1;
+  padding-top: 100px;
   font-size: 3em;
   font-family: Syncopate-Bold;
   text-decoration: underline;
