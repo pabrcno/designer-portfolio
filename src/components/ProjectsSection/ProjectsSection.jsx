@@ -6,6 +6,7 @@ import ProjectCard from "../ProjectCard";
 import maImg from "../../assets/images/meetAssistant.svg";
 import tasks from "../../assets/images/tasks.svg";
 import tso from "../../assets/images/tso.svg";
+import hands from "../../assets/images/hands.svg";
 const ProjectSection = styled.section`
   width: 100%;
 
@@ -18,30 +19,32 @@ const ProjectSection = styled.section`
 `;
 const ProjectsSection = (props) => {
   return (
-    <>
-      <ProjectSection>
-        <ParticlesBackground
-          position="absolute"
-          particlesConfig={projectsParticlesConfig}
-        />
-
-        <ProjectCard
-          href="https://pabrcno.github.io/Tasks/"
-          background="#40fff332"
-          image={tasks}
-        />
-        <ProjectCard
-          href="https://play.google.com/store/apps/details?id=ar.com.sistematis.tso&hl=es_EC"
-          background="#40fff332"
-          image={tso}
-        />
-        <ProjectCard
-          href="https://chrome.google.com/webstore/detail/google-meet-attendance-en/dfoeddmkpdeheffinggbeggiebnhhmno?hl=es"
-          background="#40fff332"
-          image={maImg}
-        />
-      </ProjectSection>
-    </>
+    <ProjectSection>
+      <ParticlesBackground
+        position="absolute"
+        particlesConfig={projectsParticlesConfig}
+      />
+      <ProjectCard
+        href="https://pabrcno.github.io/react-hands/"
+        background="#ff00f332"
+        image={hands}
+      />
+      <ProjectCard
+        href="https://pabrcno.github.io/Tasks/"
+        background="#fffff332"
+        image={tasks}
+      />
+      <ProjectCard
+        href="https://play.google.com/store/apps/details?id=ar.com.sistematis.tso&hl=es_EC"
+        background="#300ff332"
+        image={tso}
+      />
+      <ProjectCard
+        href="https://chrome.google.com/webstore/detail/google-meet-attendance-en/dfoeddmkpdeheffinggbeggiebnhhmno?hl=es"
+        background="#40fff332"
+        image={maImg}
+      />
+    </ProjectSection>
   );
 };
 

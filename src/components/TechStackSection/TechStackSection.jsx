@@ -16,7 +16,7 @@ const StyledSection = styled.section`
   justify-content: center;
   color: white;
   a {
-    font-size: 1em;
+    font-size: 0.5em;
     color: white;
   }
 `;
@@ -59,6 +59,7 @@ const TechStackSection = (props) => {
     "CI/CD",
     "Git",
     "Agile",
+    "THREE.js",
   ];
 
   return (
@@ -66,11 +67,7 @@ const TechStackSection = (props) => {
       <TechStackTitle>TECH STACK</TechStackTitle>
 
       <CloudContainer>
-        <StyledTagClod
-          tagName={techTags}
-          speed={0.3}
-          radius={isMobile ? 250 : 270}
-        />
+        <StyledTagClod tagName={techTags} speed={0.3} radius={250} />
       </CloudContainer>
     </StyledSection>
   );

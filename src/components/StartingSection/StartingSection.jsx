@@ -30,43 +30,7 @@ const Subtitle = styled.h2`
   transition: font-size 1s ease;
   margin-left: 1.5em;
 `;
-const ContactMeBadge = styled.section`
-  layout: none;
-  position: absolute;
-  display: flex;
-  margin-top: 3em;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 150px;
-  padding: 0 1em 0 2em;
 
-  margin-left: 80%;
-  color: white;
-  background-color: #40fff335;
-  font-family: InputMono;
-
-  transition: all 400ms ease;
-  transform: rotate(35deg);
-  margin-right: 150px;
-  rotate: 45;
-  &:hover {
-    background-color: #40fff385;
-    width: 155px;
-    height: 155px;
-    transform: scale(1.3, 1.3) rotate(0deg);
-  }
-  a {
-    margin-left: 5%;
-    color: white;
-
-    text-decoration: none;
-    transition: all 400ms ease;
-    &:hover {
-      transition: all 200ms ease;
-    }
-  }
-`;
 const StartingSection = ({ setY, scrollDestinationRef }) => {
   const messagesEndRef = useRef(null);
   const scrollToBottom = () => {

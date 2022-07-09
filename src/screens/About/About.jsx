@@ -5,6 +5,8 @@ import Footer from "../../components/Footer";
 import Trail from "../../components/Trail/Trail";
 import Paper from "@material-ui/core/Paper";
 import { isMobile } from "react-device-detect";
+const trujilloMapsLink =
+  "https://www.google.com.ar/maps/place/Trujillo+3150,+Trujillo,+Venezuela/@9.3708915,-70.4566849,14z/data=!3m1!4b1!4m5!3m4!1s0x8e62d52cdedb7061:0xd954f16fe4624329!8m2!3d9.3564497!4d-70.4372404";
 const AboutScreen = styled.div`
   display: flex;
   flex-direction: column;
@@ -65,6 +67,10 @@ const StyledPaper = styled(Paper)`
 const Paragraph = styled.p`
   line-height: 2.6rem;
   margin-bottom: 2em;
+  a {
+    color: #20ccc3;
+    text-decoration: none;
+  }
 `;
 
 const About = (props) => {
@@ -77,19 +83,20 @@ const About = (props) => {
   ];
   const description = [
     <Paragraph>
-      I come from Trujillo a little town in Venezuela, a pretty place, I started
-      software development 3 years ago and I'm very proud of how as an immigrant
-      I have gone from being a clerk, to be creating stuff that makes people's
-      life better.
+      I come from
+      <a href={trujilloMapsLink} target="_blank" rel="noopener noreferrer">
+        {" "}
+        Trujillo a little town in Venezuela
+      </a>
+      , I love creating software that makes people's life better.
     </Paragraph>,
     <Paragraph>
-      Through this I like to express what I have in my mind and in the process
-      create value. What everyone wants,be useful and helpful.
+      For me software is a creative experience that allows me to express ideas.
     </Paragraph>,
     <Paragraph>
       As a software developer my core strength is mix between design, software
-      architecture and development. I am tech agnostic and I have demonstrated I
-      can learn anything that I feel passionate for.
+      architecture and development. I am tech agnostic, AI enthusiast and
+      passionate about technology and how symbiotic we are with it.
     </Paragraph>,
     <Paragraph>
       Thanks for being here. We all live in a hurry and if you read this means
